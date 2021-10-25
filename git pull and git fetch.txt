@@ -1,0 +1,16 @@
+GIT PULL:-
+the git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+once the content is downloaded git pull will enter a merge workflow. a merge commit will be created and head updated to point at the new commit.
+
+GIT FETCH:-
+the git fetch commamd downloads commits,files.and ref from a remote repository into your local repository.Fetching is what we want to see what everybody else has been working on. When downloading content from a remote repository,git pull and git fetch commands are available to accomplish the task.
+
+DEFFERENCE BETWEEN GITPULL AND GITFETCH :-
+
+**--The git fetch command downloads commits, files, and refs from a remote repository into your local repo 
+whereas git pull is the more aggressive alternative; it will download the remote content for the active local branch and immediately execute git merge to create a merge commit for the new remote content.
+
+**--When comparing Git pull vs fetch, Git fetch is a safer alternative because it pulls in all the commits from your remote but doesn't make any changes to your local files. On the other hand, Git pull is faster as we are performing multiple actions in one – a better bang for the buck.
+
+**--comes after git fetch:-
+git merge origin/master should work. Since master is usually a tracking branch, you could also do git pull from that branch and it will do a fetch & merge for you. If you have local changes on your master that aren't reflected on origin , you might want git rebase origin/master to make sure your commits are on top
